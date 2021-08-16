@@ -1,0 +1,154 @@
+{% extends "base.html" %}
+
+
+{% block title %} New Invoice {% endblock %}
+
+
+{% block content %} 
+
+
+
+	<div id="main">
+	<form>
+		
+		<div id="content-header">
+			<img src="http://localhost:5000/static/logo.gif">
+			<table id="header-table">
+				<tr>
+					<th>Invoice #</th>
+					<td class="header-area"><input id='invoice' class="header-area" type="text" value={{invoiceNo}}></input></td>
+				</tr>
+				<tr>
+					<th>Date</th>
+					<td class="header-area"><input class="header-area" value={{day}} type="text"></input></td>
+				</tr>
+				
+				<tr class="contactinfo">
+					<th>Name</th>
+					<td class="header-area"><input class="header-area" id="name" ></input></td>	
+				</tr>			
+				<tr>
+					<th>Phone</th>
+					<td class="header-area"><input class="header-area" ></input></td>
+				</tr>
+				<tr>
+					<th>Address</th>
+					<td class="header-area"><textarea class="header-area" id="address"></textarea></td>
+				</tr>
+				
+			</table>
+		</div>
+		
+		<table id="pricetable">
+			<thead>
+				<tr>
+					<th class="qtycol">Qty</th>
+					<th  class="itemcol">Item</th>
+					<th class="pricecol">Price/Unit</th>
+					<th class="extcol">Extension</th>
+				</tr>
+			</thead>
+			<tbody id="price-table-body">
+				<tr>
+					<td><textarea class="itemfield qty"></textarea></td>
+					<td><textarea class="itemfield item"></textarea></td>
+					<td><textarea  class="itemfield price"></textarea></td>
+					<td><textarea class="itemfield ext"></textarea></td>
+				</tr>
+				<tr>
+					<td><textarea class="itemfield qty"></textarea></td>
+					<td><textarea class="itemfield item"></textarea></td>
+					<td><textarea class="itemfield price"></textarea></td>
+					<td><textarea class="itemfield ext"></textarea></td>
+				</tr>
+				<tr>
+					<td><textarea class="itemfield qty"></textarea></td>
+					<td><textarea class="itemfield item"></textarea></td>
+					<td><textarea class="itemfield price"></textarea></td>
+					<td><textarea class="itemfield ext"></textarea></td>
+				</tr>
+				<tr>
+					<td><textarea class="itemfield qty"></textarea></td>
+					<td><textarea class="itemfield item"></textarea></td>
+					<td><textarea class="itemfield price"></textarea></td>
+					<td><textarea class="itemfield ext"></textarea></td>
+				</tr>
+				<tr>
+					<td><textarea class="itemfield qty"></textarea></td>
+					<td><textarea class="itemfield item"></textarea></td>
+					<td><textarea class="itemfield price"></textarea></td>
+					<td><textarea class="itemfield ext"></textarea></td>
+				</tr>
+			</tbody>
+		</table>
+		<a id="addrow" href="#">add a row</a>
+		
+		<table id=exttable>
+			<tr>
+				<th class="info">Account</th>
+				<td><textarea></textarea></td>
+				<th class="info">Delivery Date</th>
+				<td><textarea></textarea></td>
+				<th class="info">Material Total</th>
+				<td><textarea  id="materialtot"></textarea></td>
+			</tr>
+			<tr>
+				<th class="info">Bankcard</th>
+				<td><textarea></textarea></td>
+				<th class="info">Ship Via</th>
+				<td><textarea></textarea></td>
+				<th class="info">Delivery</th>
+				<td><textarea id="delivery"></textarea></td>
+			</tr>
+			<tr>
+				<th class="info">Cash</th>
+				<td><textarea></textarea></td>
+				<th class="info">Reseller Permit</th>
+				<td><textarea  id="resale"></textarea></td>
+				<th class="info">Subtotal</th>
+				<td><textarea id="subtotal"></textarea></td>
+			</tr>
+			<tr>
+				<th class="info">Check</th>
+				<td><textarea></textarea></td>
+				<th class="info">Tax Code</th>
+				<td><textarea id="taxcode"></textarea></td>
+				<th class="info">Tax on Subtotal</th>
+				<td><textarea  id="taxes"></textarea></td>
+			</tr>
+			<tr>
+				<th class="info">Sales Rep</th>
+				<td><textarea></textarea></td>
+				<th class="info">P.O. #</th>
+				<td><textarea></textarea></td>
+				<th class="info">Deposit</th>
+				<td><textarea id="deposit"></textarea></td>
+			</tr>
+			<tr>
+				<th class="blank">Sales Rep</th>
+				<td class="blank"><textarea></textarea></td>
+				<th class="blank">P.O. #</th>
+				<td class="blank"><textarea></textarea></td>
+				<th class="info">Total</th>
+				<td><textarea id="total"></textarea></td>
+			</tr>
+		
+		</table>
+		
+		<div id="buttons">
+			<button id="print" type="button">Print</button>
+			<button input type="reset" name="Reset" id="save">Save</button>
+		</div>
+	</form>
+	
+	
+		
+		
+	</div>
+
+
+
+
+{% endblock %}
+
+

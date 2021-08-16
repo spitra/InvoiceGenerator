@@ -1,0 +1,165 @@
+
+
+#content-header
+{
+
+	float: right;
+	width: 100%;
+
+}
+
+#header-table
+{
+	float:right;
+	margin-bottom: 20px;
+}
+img
+{
+	float: left;
+
+}
+
+textarea
+{
+	resize:none;
+	border:none;
+
+}
+
+th
+{
+	background:DarkGrey;
+	border:1px solid black;
+
+}
+
+td.header-area
+{
+	border: 1px solid black;
+
+}
+td
+{
+	border:1px solid black;
+	
+}
+textarea.header-area
+{
+	border: none;
+}
+input.header-area
+{
+	border: none;
+
+}
+
+input:focus
+{
+	outline:none;
+
+}
+textarea:focus
+{
+	outline:none;
+	
+}
+table
+{
+	table-layout:fixed;
+}
+canvas:
+{
+	visibility:hidden;
+	height:100%;
+	width:100%;
+
+}
+
+#main 
+{
+	width: 800px;
+	margin: auto;
+
+
+}
+
+#address
+{
+	height:75px;
+
+}
+
+#pricetable
+{
+	border:1px solid black;
+	border-collapse:collapse;
+
+}
+
+#exttable
+{
+	margin-top:50px;
+	border:1px solid black;
+	border-collapse:collapse;
+}
+
+#buttons
+{
+	float:right;
+	margin-top:10px;
+
+}
+
+.itemfield
+{
+	border: none;
+	width:90%;
+	margin:0 auto;
+	padding:5px;
+	
+}
+
+.blank
+{
+	visibility:hidden;
+	border:none;
+
+}
+.contactinfo
+{
+	margin-bottom:10px;
+
+}
+.itemcol 
+{
+	width:35%;
+
+}
+
+.qtycol
+{
+	width:15%;
+
+}
+
+.extcol
+{
+	width:15%;
+	
+}
+.pricecol
+{
+	width:15%;
+	
+}
+::placeholder {
+	color:black;
+	opacity:1;
+
+}
+
+@page {
+    size: Letter;
+    margin: 0in 0.44in 0.2in 0.44in;
+}
+

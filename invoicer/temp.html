@@ -1,0 +1,155 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+    <title> New Invoice </title>
+    <script src="static/scripts.js"></script>
+    <link rel="stylesheet" media="print" href="static/styles.css" />
+    <link rel="stylesheet" href="static/styles.css" />
+</head>
+<body>
+     
+
+
+
+	<div id="main">
+	<form>
+		
+		<div id="content-header">
+			<img src="static/logo.gif" />
+			<table id="header-table">
+				<tbody><tr>
+					<th>Invoice #</th>
+					<td class="header-area"><input id="invoice" class="header-area" type="text" value="163" /></td>
+				</tr>
+				<tr>
+					<th>Date</th>
+					<td class="header-area"><input class="header-area" value="February-18-2021" type="text" /></td>
+				</tr>
+				
+				<tr class="contactinfo">
+					<th>Name</th>
+					<td class="header-area"><input class="header-area" id="name" value="" /></td>	
+				</tr>			
+				<tr>
+					<th>Phone</th>
+					<td class="header-area"><input class="header-area" value="" /></td>
+				</tr>
+				<tr>
+					<th>Address</th>
+					<td class="header-area"><textarea class="header-area" id="address">312 45th St, Seattle</textarea></td>
+				</tr>
+				
+			</tbody></table>
+		</div>
+		
+		<table id="pricetable">
+			<thead>
+				<tr>
+					<th class="qtycol">Qty</th>
+					<th class="itemcol">Item</th>
+					<th class="pricecol">Price/Unit</th>
+					<th class="extcol">Extension</th>
+				</tr>
+			</thead>
+			<tbody id="price-table-body">
+				<tr>
+					<td><textarea class="itemfield qty">100 lbs</textarea></td>
+					<td><textarea class="itemfield item">quartzite</textarea></td>
+					<td><textarea class="itemfield price">$ 0.23 / lb</textarea></td>
+					<td><textarea class="itemfield ext">$ 23.00</textarea></td>
+				</tr>
+				<tr>
+					<td><textarea class="itemfield qty"></textarea></td>
+					<td><textarea class="itemfield item"></textarea></td>
+					<td><textarea class="itemfield price"></textarea></td>
+					<td><textarea class="itemfield ext"></textarea></td>
+				</tr>
+				<tr>
+					<td><textarea class="itemfield qty"></textarea></td>
+					<td><textarea class="itemfield item"></textarea></td>
+					<td><textarea class="itemfield price"></textarea></td>
+					<td><textarea class="itemfield ext"></textarea></td>
+				</tr>
+				<tr>
+					<td><textarea class="itemfield qty"></textarea></td>
+					<td><textarea class="itemfield item"></textarea></td>
+					<td><textarea class="itemfield price"></textarea></td>
+					<td><textarea class="itemfield ext"></textarea></td>
+				</tr>
+				<tr>
+					<td><textarea class="itemfield qty"></textarea></td>
+					<td><textarea class="itemfield item"></textarea></td>
+					<td><textarea class="itemfield price"></textarea></td>
+					<td><textarea class="itemfield ext"></textarea></td>
+				</tr>
+			<tr><td><textarea class="itemfield qty"></textarea></td><td><textarea class="itemfield item"></textarea></td><td><textarea class="itemfield price"></textarea></td><td><textarea class="itemfield ext"></textarea></td></tr><tr><td><textarea class="itemfield qty"></textarea></td><td><textarea class="itemfield item"></textarea></td><td><textarea class="itemfield price"></textarea></td><td><textarea class="itemfield ext"></textarea></td></tr><tr><td><textarea class="itemfield qty"></textarea></td><td><textarea class="itemfield item"></textarea></td><td><textarea class="itemfield price"></textarea></td><td><textarea class="itemfield ext"></textarea></td></tr></tbody>
+		</table>
+		<a id="addrow" href="#">add a row</a>
+		
+		<table id="exttable">
+			<tbody style="width:100%;"><tr>
+				<th class="info">Account</th>
+				<td><textarea></textarea></td>
+				<th class="info">Delivery Date</th>
+				<td><textarea></textarea></td>
+				<th class="info">Material Total</th>
+				<td><textarea id="materialtot">$ 23.00</textarea></td>
+			</tr>
+			<tr>
+				<th class="info">Bankcard</th>
+				<td><textarea></textarea></td>
+				<th class="info">Ship Via</th>
+				<td><textarea></textarea></td>
+				<th class="info">Delivery</th>
+				<td><textarea id="delivery">$ 222.00</textarea></td>
+			</tr>
+			<tr>
+				<th class="info">Cash</th>
+				<td><textarea></textarea></td>
+				<th class="info">Reseller Permit</th>
+				<td><textarea id="resale"></textarea></td>
+				<th class="info">Subtotal</th>
+				<td><textarea id="subtotal">$ 245.00</textarea></td>
+			</tr>
+			<tr>
+				<th class="info">Check</th>
+				<td><textarea></textarea></td>
+				<th class="info">Tax Code</th>
+				<td><textarea id="taxcode">16.5 %</textarea></td>
+				<th class="info">Tax on Subtotal</th>
+				<td><textarea id="taxes">$ 40.43</textarea></td>
+			</tr>
+			<tr>
+				<th class="info">Sales Rep</th>
+				<td><textarea></textarea></td>
+				<th class="info">P.O. #</th>
+				<td><textarea></textarea></td>
+				<th class="info">Deposit</th>
+				<td><textarea id="deposit"></textarea></td>
+			</tr>
+			<tr>
+				<th class="blank">Sales Rep</th>
+				<td class="blank"><textarea></textarea></td>
+				<th class="blank">P.O. #</th>
+				<td class="blank"><textarea></textarea></td>
+				<th class="info">Total</th>
+				<td><textarea id="total">$ 285.43</textarea></td>
+			</tr>
+		
+		</tbody></table>
+		
+		<div id="buttons">
+			<button id="print" type="button">Print</button>
+			<button input="" type="reset" name="Reset" id="save">Save</button>
+		</div>
+	</form>
+	
+	
+		
+		
+	</div>
+
+
+
+
+
+
+</body></html>
